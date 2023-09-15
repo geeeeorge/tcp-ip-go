@@ -1,3 +1,3 @@
-module github.com/kawa1214/tcp-ip-go
+module github.com/geeeeorge/tcp-ip-go
 
 go 1.20
