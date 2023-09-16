@@ -11,8 +11,8 @@ func main() {
 	nw.Bind()
 
 	for {
-		pkt, _ := network.Read()
+		pkt, _ := nw.Read()
 		fmt.Print(hex.Dump(pkt.Buf[:pkt.N]))
-		network.Write(pkt)
+		_ = nw.Write(pkt)
 	}
 }
